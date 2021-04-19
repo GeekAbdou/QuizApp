@@ -1,20 +1,19 @@
 import 'package:flutter/material.dart';
-
-import 'screens/homepage_screen.dart';
-import 'screens/quiz.dart';
+import './screens/home.dart';
 
 void main() {
   runApp(MyApp());
 }
 
 class MyApp extends StatelessWidget {
+  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Quiz App',
       debugShowCheckedModeBanner: false,
       theme: ThemeData.dark(),
-      home: QuizScreen(),
+      home: Homepage(),
     );
   }
 }
