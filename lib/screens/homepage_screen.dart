@@ -1,4 +1,3 @@
-import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:websafe_svg/websafe_svg.dart';
 
@@ -9,8 +8,10 @@ class HomePageScreen extends StatelessWidget {
       body: Stack(
         children: [
           WebsafeSvg.asset(
-            'assets/images/backgroung.svg',
+            'assets/images/background.svg',
             fit: BoxFit.cover,
+            width: MediaQuery.of(context).size.width,
+            height: MediaQuery.of(context).size.height,
           ),
           SafeArea(
             child: Padding(
